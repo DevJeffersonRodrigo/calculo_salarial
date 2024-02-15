@@ -1,4 +1,5 @@
 # Escreva seu código aqui :-)
+# Faça as alterações nescessárias.
 while True:
     nome = str(input('Digite o nome do funcionário: ')).upper()
     empresa = str(input('Digite o nome da empresa : ')).upper()
