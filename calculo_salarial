@@ -1,0 +1,27 @@
+# Escreva seu código aqui :-)
+while True:
+    nome = str(input('Digite o nome do funcionário: ')).upper()
+    empresa = str(input('Digite o nome da empresa : ')).upper()
+    cargo = str(input('Digite é o seu cargo na empresa: ')).upper()
+    sal = float(input('Digite seu salário da carteira : '))
+    # salário registrado na carteira 2.500,00
+    vht = 11.36
+    # valor hora trabalhada
+    hep = 17.04
+    # hora extra parcial
+    het = 22.72
+    # hora extra total
+    ac = float(input('Quantas horas extras vc recebe por dia ?: '))
+    # ajuda de custo
+    hep = float(input('Quantas horas extras a 50% no total ?: '))
+    # hora extra total
+    heffs = float(input('Quantas horas extras a 100% no total ?: '))
+    # hora extra feriados e finais de semana
+    total = sal + (ac * 22 * 17.04) + (hep * 17.04) + (heffs * 22.72)
+    print('=================================================================')
+    print(f'{nome}, {cargo},este mês receberá da {empresa}:\n{ac} horas extras diárias como ajuda de custo.\n{hep} horas extras a 50%\n{heffs} horas extras a 100%\nTotal de R${total:.2f} de salário.')
+    print('=================================================================')
+    continuar = input('Deseja fazer um  novo cálculo ? (s/n): ')
+    if continuar.lower() != 's':
+        break
+print('Desenvolvido por: DevJeffersonRodrigo')
