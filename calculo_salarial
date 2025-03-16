@@ -6,11 +6,11 @@ while True:
     cargo = str(input('Digite é o seu cargo na empresa: ')).upper()
     sal = float(input('Digite seu salário da carteira : '))
     # salário registrado na carteira 2.600,00
-    vht = 11.36
+    vht = 11.8181818
     # valor hora trabalhada
-    hep = 17.04
+    hep = 17.7272727
     # hora extra parcial
-    het = 22.72
+    het = 23.6363636
     # hora extra total
     ac = float(input('Quantas horas extras vc recebe por dia ?: '))
     # ajuda de custo
@@ -18,7 +18,7 @@ while True:
     # hora extra total
     heffs = float(input('Quantas horas extras a 100% no total ?: '))
     # hora extra feriados e finais de semana
-    total = sal + (ac * 22 * 17.04) + (hep * 17.04) + (heffs * 22.72)
+    total = sal + (ac * 22 * 17.72) + (hep * 17.72) + (heffs * 23.63)
     print('=================================================================')
     print(f'{nome}, {cargo},este mês receberá da {empresa}:\n{ac} horas extras diárias como ajuda de custo.\n{hep} horas extras a 50%\n{heffs} horas extras a 100%\nTotal de R${total:.2f} de salário.')
     print('=================================================================')
