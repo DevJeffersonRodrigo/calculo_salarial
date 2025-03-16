@@ -5,7 +5,7 @@ while True:
     empresa = str(input('Digite o nome da empresa : ')).upper()
     cargo = str(input('Digite é o seu cargo na empresa: ')).upper()
     sal = float(input('Digite seu salário da carteira : '))
-    # salário registrado na carteira 2.500,00
+    # salário registrado na carteira 2.600,00
     vht = 11.36
     # valor hora trabalhada
     hep = 17.04
